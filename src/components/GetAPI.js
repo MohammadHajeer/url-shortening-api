@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
+import trashIcon from "../images/trash-icon.svg";
 
 function GetAPI({ getLinks }) {
   const [loader, setLoader] = useState(false);
@@ -46,7 +47,11 @@ function GetAPI({ getLinks }) {
           placeholder="Shorten a link here..."
         />
         {loader && <Loader />}
-        {!validation&& <p className="text-[#f46262] absolute -bottom-1 translate-y-full">Please add a link</p>}
+        {!validation && (
+          <p className="text-[#f46262] absolute -bottom-1 translate-y-full">
+            Please add a link
+          </p>
+        )}
       </div>
       <div className="flex gap-4 max-sm:flex-col">
         <button
@@ -59,7 +64,7 @@ function GetAPI({ getLinks }) {
           onClick={() => setShorkLinks([])}
           className="button-style rounded-lg"
         >
-          <i className="fa fa-trash"></i>
+          <img src={trashIcon} alt="trash-icon" />
         </button>
       </div>
     </div>

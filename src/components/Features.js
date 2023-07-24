@@ -50,7 +50,7 @@ export default Features;
 
 function Feature({ img, title, details }) {
   return (
-    <div className="w-[390px] max-w-full z-50 bg-white p-10 pt-0 rounded-lg max-lg:last-of-type:self-start
+    <div className="w-[390px] xl:w-[490px] max-w-full z-50 bg-white p-10 pt-0 rounded-lg max-lg:last-of-type:self-start
      last-of-type:self-end first-of-type:self-start max-lg:odd:self-end odd:self-center shadow-lg
      max-md:last-of-type:self-center max-md:first-of-type:self-center max-md:odd:self-center">
       <div className=" bg-mainText rounded-full w-fit p-5 -translate-y-1/2 max-md:mx-auto shadow-md shadow-mainText">
