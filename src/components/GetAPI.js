@@ -64,7 +64,7 @@ function GetAPI({ getLinks }) {
           onClick={() => setShorkLinks([])}
           className="button-style rounded-lg"
         >
-          <img src={trashIcon} alt="trash-icon" />
+          <img className="block mx-auto" src={trashIcon} alt="trash-icon" />
         </button>
       </div>
     </div>
